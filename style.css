@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 80vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+header{
+    background-color: #3c8cf0;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 22px;
+}
+.logo{
+    width: 150px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    
+}
+.logo img{
+    width: 100%;   
+}
+.links{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    list-style: none;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+.links li{
+    font-size: larger;
+    font-weight: bold;
+}
+.links li a{
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 12px;
+}
+.links li a:hover{
+    border-bottom: 5px solid white;
+    
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icon i{
+    color: #fff;
+    font-size: 22px;
+}
+.watchlist{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.setting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.setting i{
+    color: #fff;
+    font-size: 22px;
+    padding: 4px;
+}
+@media only screen and (max-width: 1250px) {
+ .container {
+     width: 100vw;
+ }
+   
+}
+@media only screen and (max-width: 900px) {
+    .links{
+        display: none;
+    }
+    .watchlist{
+        display: none;
+    }
+    .setting{
+        display: none;
+    }
+   
+}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    height: 425px;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .mySlides img{
+      height: 425px;
+  }
+  
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .container h2{
+      font-size: 24px;
+      padding: 12px;
+  }
+  .trend{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  .tshows{
+      width: 200px;
+      /* border: 1px solid black; */
+      height: 300px;
+      text-align: center;
+      padding: 12px;
+      
+  }
+  .tshows img{
+      width: 100%;
+      height: 92%;
+      border-radius: 12px;
+  }
+  .tshows:hover{
+    transform: scale(1.1);
+      
+  }
+  .tshows a{
+      text-decoration: none;
+      color: black;    
+  }
+  @media(max-width:375px){
+    .tshows{
+        width: 180px;    
+    }
+
+  }
