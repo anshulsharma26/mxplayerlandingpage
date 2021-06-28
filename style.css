@@ -22,58 +22,75 @@ header{
     z-index: 1;
     text-transform: uppercase;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 22px;
+    /* flex-wrap: wrap; */
+    padding: 0 12px;
+    letter-spacing: 2px;
+}
+.leftflex{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    /* border: 1px solid black; */
 }
 .logo{
-    width: 150px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border: 1px solid black; */
-    padding: 10px;
     
 }
 .logo img{
-    width: 100%;   
+    width: 100%;       
 }
 .links{
     display: flex;
-    width: 50%;
+    width: 100%;
     justify-content: space-evenly;
     list-style: none;
     /* border: 1px solid black; */
     align-items: center;
 }
 .links li{
-    font-size: larger;
-    font-weight: bold;
+    font-size: 12px;
+    /* font-weight: bold; */
 }
 .links li a{
     color: #fff;
     text-decoration: none;
-    padding-bottom: 12px;
+    padding-bottom: 18px;
 }
 .links li a:hover{
-    border-bottom: 5px solid white;
+    border-bottom: 3px solid white;
     
+}
+.rightflex{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
 .search-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid black; */
 }
 .search-icon i{
     color: #fff;
-    font-size: 22px;
+    font-size: 16px;
 }
 .watchlist{
     color: #fff;
     display: flex;
     align-items: center;
+    /* border: 1px solid black; */
 }
 .setting{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid black; */
 
 }
 .setting i{
@@ -201,7 +218,7 @@ header{
       text-decoration: none;
       color: black;    
   }
-  @media(max-width:400px){
+  @media(max-width: 400px){
     .tshows{
         width: 180px;    
     }
